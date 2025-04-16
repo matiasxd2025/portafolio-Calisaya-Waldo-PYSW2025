@@ -1,0 +1,258 @@
+/* Estilos Generales */
+body {
+    margin: 0; /* Elimina el margen predeterminado del cuerpo */
+    padding: 0; /* Elimina el relleno predeterminado del cuerpo */
+    font-family: 'Times New Roman', Times, serif; /* Define la fuente del texto */
+    color: rgb(8, 0, 0); /* Define el color del texto */
+    background-color: rgba(220, 255, 252, 0.795); /* Define el color de fondo del cuerpo */
+    line-height: 1.5em; /* Define la altura de línea para el texto */
+}
+
+h1 {
+    font-size: 2.3em; /* Tamaño de la fuente del encabezado */
+    line-height: 1.2; /* Altura de línea del encabezado */
+    margin: 12px 0; /* Margen superior e inferior del encabezado */
+    text-align: center; /* Centar texto de encabezado*/
+    font-weight: 300; /*Define el Grosor de la fuente*/
+    font-variant: small-caps; /*Convierte el texto a versalitas */
+}
+
+p {
+    margin: 0 0 1.5em 0; /* Define márgenes para los párrafos */
+    text-align: justify; /* Justifica el texto */
+}
+
+img {
+    max-width: 100%; /* Ajusta el ancho maximo de la imagen al contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 15px; /* Redondea los bordes de la imagen */
+}
+
+hr {
+    border: 0; /* Elimina los bordes */
+    border-top: 1px solid #ccc; /* Define una línea como separador */
+    margin: 20px 0; /* Espacio arriba y abajo de la línea */
+}
+
+/* Fin  Estilos Generales */
+
+/* Inicio de estilos del encabezado */
+#main-header {
+    background-color: rgb(10, 10, 10); /* Color de fondo del encabezado */
+    color: white; /* Color del texto */
+    height: 70px; /* Altura del encabezado */
+    width: 100%; /* Ancho completo del encabezado */
+    left: 0; /* Posición izquierda del encabezado */
+    top: 0; /* Posición superior del encabezado */
+    position: fixed; /* Fija el encabezado en la parte superior */
+
+}
+
+#main-header a {
+    color: white; /* Color de los enlaces en el encabezado */
+
+}
+
+#logo-header {
+    float: left; /* Posiciona el logo a la izquierda */
+    padding: 15px 0 0 20px; /* Espaciado interno del logo */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+}
+
+#logo-header .site-name {
+    display: block; /* Muestra el nombre del sitio como bloque */
+    
+    font-weight: 800; /* grosor de la fuente */
+    font-size: 1.2em; /* Tamaño de la fuente */
+}
+
+#logo-header .site-desc {
+    display: block; /* Muestra el nombre del sitio como bloque */
+    
+    font-weight: 300; /* grosor de la fuente */
+    font-size: 0.8em; /* Tamaño de la fuente */
+    color: rgb(157, 154, 154); /* color de texto */
+}
+
+/* Navegacion */
+nav {
+    float: right; /* Posiciona la navegación a la derecha */
+    
+}
+
+nav ul {
+    list-style: none; /* Elimina los puntos de la lista */
+    padding-right: 20px; /* Espacio ala derecha */
+    
+}
+
+nav ul li {
+    display: inline-block; /* Muestra los elementos de la lista en línea */
+    line-height: 40px; /* Altura de linea de los elementos */
+    margin: 0 5px; /* margen entre los elementos */
+}
+
+nav ul li a {
+    color: white; /* Color del texto de los enlaces */
+    font-size: 20px; /* Tamaño de la fuente */
+    padding: 7px 13px; /* Espaciado interno de los enlaces */
+    border-radius: 10px; /* Bordes redondeados */
+    text-transform: uppercase; /* Convierte el texto a mayúsculas */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+}
+
+nav ul li a:hover {
+    background: rgb(2, 40, 110); /* Color de fondo al pasar el mouse */
+    transition: 0.25s; /* Transición suave */
+    font-weight: bolder; /* Grosor de la fuente al pasar el mouse */
+}
+
+/* Boton para el menu responsivo*/
+.checkbtn { /* Botón para el menú responsivo */
+    font-size: 30px; /* Tamaño del icono del botón */
+    color: white; /* Color del botón */
+    float: right; /* Posiciona el botón a la derecha */
+    margin-top: 25px; /* Margen superior */
+    line-height: 50px; /* Altura de línea */
+    margin-right: 40px; /* Margen derecho */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    display: none; /* Oculta el botón por defecto */
+}
+
+#check {
+    display: none; /* Oculta el checkbox por defecto */
+}
+
+/* Fin de estilos del encabezado */
+
+/* Inicio del estilo para el contenido */
+#main-content {
+    background: white; /* Fondo blanco para el contenido */
+    width: 90%; /* Ancho del contenido */
+    max-width: 800px; /* Ancho máximo del contenido */
+    margin: 20px auto; /* Centra el contenido horizontalmente */
+    box-shadow: 0 0 50px rgb(32, 31, 31); /* Sombra alrededor del contenido */
+    border-radius: 15px; /* Bordes redondeados */
+}
+
+#main-content header, #main-content .content {
+    padding: 40px; /* Espaciado interno del contenido */
+}
+
+.contenedor-servicios {
+    display: flex; /* Usa flexbox para organizar los elementos */
+    justify-content: space-around; /* Espacia los elementos uniformemente */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en varias filas */
+    color: white; /* Color del texto */
+}
+
+.servicio {
+    width: 35%; /* Ancho de cada servicio */
+    padding: 34px 30px 38px 30px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    margin-bottom: 40px; /* Margen inferior */
+    position: relative; /* Posición relativa para ajustes internos */
+}
+
+.servicio p {
+    margin-bottom: 20px; /* Margen inferior de los párrafos */
+    height: 194px; /* Altura fija para los párrafos */
+}
+
+.contenedor-servicios .Violeta {
+    background: linear-gradient(to bottom,
+            rgb(120, 40, 140),
+            rgb(10, 204, 253),
+            rgb(120, 40, 140)); /* Gradiente de colores */
+    box-shadow: 0 12px 30px 0 rgb(92, 5, 255); /* Sombra alrededor del servicio */
+    text-align: justify; /* Justifica el texto */
+}
+
+.contenedor-servicios .Celeste {
+    background: linear-gradient(to bottom,
+            rgb(3, 130, 250),
+            rgb(10, 204, 253),
+            rgb(3, 130, 250)); /* Gradiente de colores */
+    box-shadow: 0 12px 30px 0 rgb(5, 113, 255); /* Sombra alrededor del servicio */
+    text-align: justify; /* Justifica el texto */
+}
+/* Fin del estilo para el contenido */
+
+/* Inicio de estilos para el pie de página */
+#main-footer {
+    background: black; /* Fondo negro para el pie de página */
+    color: white; /* Color del texto */
+    text-align: center; /* Centra el texto */
+    padding: 20px; /* Espaciado interno */
+    margin-top: 40px; /* Margen superior */
+}
+
+#main-footer p {
+    margin: 0; /* Elimina el margen de los párrafos */
+    font-size: 20px; /* Tamaño de la fuente */
+    text-align: center; /* Centra el texto */
+}
+
+#main-footer a {
+    color: white; /* Color de los enlaces */
+}
+/* Fin de estilos para el pie de página */
+
+
+
+/* Define los estilos cuando la pantalla reduce de tamaño */
+@media (max-width: 850px) {
+    #main-content .servicio {
+        width: 90%; /* Ajusta el ancho de los servicios */
+    }
+
+    /* Botón de menú */
+    .checkbtn {
+        display: inline-block; /* Muestra el botón */
+        margin-top: -5px; /* Ajusta el margen superior */
+        margin-right: 5px; /* Ajusta el margen derecho */
+        font-size: 60px; /* Tamaño del icono */
+    }
+
+    ul {
+        position: fixed; /* Fija la posición del menú */
+        width: 100%; /* Ancho completo */
+        height: 100vh; /* Altura completa de la pantalla */
+        background: black; /* Fondo negro */
+        top: 54px; /* Posición superior */
+        left: -120%; /* Oculta el menú fuera de la pantalla */
+        text-align: center; /* Centra el texto */
+        transition: all 0.3s; /* Transición suave */
+    }
+
+    nav ul li {
+        display: block; /* Muestra los elementos en bloque */
+        margin: 0; /* Elimina el margen */
+        padding: 2%; /* Espaciado interno */
+        height: 35px; /* Altura de los elementos */
+        line-height: 30px; /* Altura de linea */
+    }
+
+    nav ul li a {
+        font-size: 20px; /* Tamaño de la fuente */
+        text-decoration: none; /* Elimina el subrayado */
+    }
+
+    li:hover,
+    li a:active {
+        background: linear-gradient(to bottom,
+                rgb(71, 0, 163),
+                rgb(18, 204, 253),
+                rgb(71, 0, 163)); /* Gradiente de colores */
+        border-radius: 5px; /* Bordes redondeados */
+        margin-left: 0; /* Elimina el margen izquierdo */
+    }
+
+    nav ul li a:hover {
+        background: none; /* Elimina el fondo al pasar el mouse */
+    }
+
+    #check:checked ~ ul {
+        left: 0; /* Muestra el menú al activarse */
+    }
+}

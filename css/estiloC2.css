@@ -1,0 +1,82 @@
+/* Estilos generales para el cuerpo de la página */
+body {
+    font-family: Arial, Helvetica, sans-serif; /* Define la fuente del texto */
+    background-color: white; /* Establece el color de fondo de la página */
+    background-image: url('../img/imagen1.jpg'); /* Establece la imagen de fondo */
+   
+}
+
+
+.container:hover {
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.2); /* Sombra ligeramente más pronunciada al pasar el ratón */
+}
+
+h3 {
+    font-size: 2.3em; /* Tamaño de la fuente del encabezado */
+    line-height: 1.2; /* Altura de línea del encabezado */
+    margin: 12px 0; /* Margen superior e inferior del encabezado */
+    text-align: center; /* Centar texto de encabezado*/
+    font-weight: 300; /*Define el Grosor de la fuente*/
+    font-variant: small-caps; /*Convierte el texto a versalitas */
+}
+
+img {
+    max-width: 100%; /* Ajusta el ancho maximo de la imagen al contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 15px; /* Redondea los bordes de la imagen */
+    display: block; /* Convertir la imagen en un elemento de bloque */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px; /* Agrega un margen de 20 píxeles en la parte superior */
+}
+
+.contenedor {
+    display: flex; /* Activa flexbox para organizar las particiones */
+    max-width: 2000px; /* Ancho máximo del contenedor */
+    margin: 80px auto 0 auto; /* Centra el contenedor horizontalmente y agrega margen superior */
+    padding: 40px; /* Agrega espacio interno dentro del contenedor */
+    background-color: rgb(46, 186, 211); /* Establece el color de fondo del contenedor */
+    border-radius: 10px; /* Redondea las esquinas del contenedor */
+    box-shadow: 0 10px 10px gray; /* Agrega una sombra alrededor del contenedor */
+    box-sizing: border-box; /* Asegura que padding y border se incluyan en el ancho */
+    border: 1px solid #e42b2b; /* Agrega un borde sutil */
+    background-clip: padding-box; /* Evita que el fondo se extienda bajo el borde */
+    transition: box-shadow 0.3s ease-in-out; /* Transición suave para la sombra */
+
+
+}
+
+.particion {
+    flex: 1; /* Hace que las particiones crezcan y se encojan por igual */
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    background-color: white;
+
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* Proporción de aspecto 16:9 para los videos de YouTube */
+    height: 0;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.otro-contenido {
+    text-align: center;
+}
+
+
+        

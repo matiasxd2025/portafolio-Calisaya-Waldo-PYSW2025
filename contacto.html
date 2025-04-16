@@ -1,0 +1,77 @@
+<!-- Define el tipo de documento como HTML5 -->
+<!DOCTYPE html>
+<html lang="en"> <!-- Inicia el documento HTML  y estblece el idioma como "en" ingles -->
+<head>
+    <meta charset="UTF-8"> <!-- Define la configuracion de caracteres como UFT-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace que la pagina sea responsive -->
+    <link rel="stylesheet" href="css/estilo.css"> <!-- Vincula el archivo de estilos principal-->
+    <link rel="stylesheet" href="css/estiloC.css"> <!-- Vincula el archivo de estilos espesifico-->
+    <title>Document</title>
+</head>
+<body>
+    <!-- Inicio de cabecera de la pagina-->
+    <header id="main-header">  <!-- Cabecera principa de la pagina -->
+        <a href="#" id="logo-header">  <!-- Enlace que contiene el logo y descripcion del sitio -->
+             <span class="site-name">Michel Zerpa</span> <!-- Nombre del sitio -->
+             <span class="site-desc">Diseño Web - PySW/HTML-CSS</span> <!-- Descripcion del citio -->
+        </a>
+
+        <nav>  <!-- Barra de navegacion -->
+            <input type="checkbox" id="check">  <!-- CheckBox para el menu responsivo -->
+            <label for="check" class="checkbtn">  <!-- Etiqueta que actua como boton del menu -->
+              ≡ <!-- Icono del menu (Hamburguesa) -->
+            </label>
+            <ul> <!-- Etiqueta que actua como boton del menu -->
+                <li><a href="index.html">Inicio</a></li>  <!-- Enlace ala pagina de Inicio -->
+                <li><a href="contacto.html">Contacto</a></li> <!-- Enlace ala pagina de Contacto -->
+                <li><a href="acercaDe.html">Acerca De</a></li>   <!-- Enlace ala pagina de Acerca De -->
+            </ul>
+        </nav>
+    </header>
+<!--  Fin de Cabezera de la pagina -->
+<!-- Contenedor principal del formulario -->
+<div class="container"> <!--  Contenedor estilizado para centrar y dar formato al formulario -->
+    <h2>Formulario de Contacto</h2> <!--  Titulo del formulario -->
+
+    <form action="" method="post"> <!--  Inicio del formulario con metodo POST-->
+        <!--  Grupo de entrada para el nombre-->
+        <div class="form-group">  <!--  Contenedor para el campo del nombre-->
+            <label for="nombre">Nombre:</label> <!--  Etiqueta para el campo del nombre-->
+            <input type="text" id="nombre" name="nombre" required>  <!-- Campo de entrada para el nombre-->
+        </div>
+        <!--  Grupo de entrada para el apellido-->
+        <div class="form-group"> <!--  Contenedor para el campo del apellido-->
+            <label for="Apellido">Apellido:</label> <!--  Etiqueta para el campo del apellido-->
+            <input type="text" id="Apellido" name="Apellido" required>  <!-- Campo de entrada para el apellido-->
+        </div>
+        <!--  Grupo de entrada para el DNI-->
+        <div class="form-group"> <!--  Contenedor para el campo del DNI-->
+            <label for="dni">DNI:</label> <!--  Etiqueta para el campo del DNI-->
+            <input type="text" id="dni" name="dni" required> <!-- Campo de entrada para el DNI-->
+        </div>
+        <!--  Grupo de entrada para el correo electronico-->
+        <div class="form-group"> <!--  Contenedor para el campo del correo-->
+            <label for="correo">Correo Electronico:</label> <!--  Etiqueta para el campo del correo-->
+            <input type="text" id="correo" name="correo" required> <!-- Campo de entrada para el correo-->
+        </div>
+        <!--  Grupo de entrada para el mensaje-->
+        <div class="form-group">  <!--  Contenedor para el campo del mensaje-->
+            <label for="mensaje">Mensaje:</label> <!--  Etiqueta para el campo del mensaje-->
+            <textarea type="text" id="mensaje" name="mensaje" rows="4" required></textarea>
+            <!--  Area de texto para el mensaje -->
+        </div>
+        <!--  Boton de envio del formulario -->
+        <button type="submit">Enviar</button> <!--  Boton para enviar el formulario -->
+    </form>
+</div>
+ <!-- Inicio del pie de pagina -->
+ <footer id="main-footer"> <!-- PIE DE PAGINA -->
+    <P>&copy; 2025 <a href="https://www.facebook.com" target="_blank">Diseño Web - PySW-UNJU-LQ</a> <!-- Enlace al sitio externo -->
+
+    </P>
+</footer>
+<!-- Fin de la pagina -->
+
+
+</body>
+</html>
